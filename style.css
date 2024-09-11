@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "PhoneFont";
+    src: url("EurostileNextLTPro-Light.otf") format("opentype");
+    font-style: normal; 
+    font-weight: normal;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+html,body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main{
+    flex: 1;
+}
+header{
+    width: 100%;
+    margin-top: 20px;
+}
+.info{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  57% 43%;
+}
+.logo{
+    padding-left: 12px;
+}
+.info-phone{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: right;
+}
+.info-phone>div>a{
+    text-decoration: none;
+    color: rgb(235,81,22);
+    font-size: 20pt;
+    font-family: "PhoneFont";
+    margin-bottom: 50px;
+    padding-right: 18px;
+}
+.top-menu{
+    background-color: rgb(35,34,33);
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.top-menu-list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 22% 13% 17% 17% 10% 21%;
+    height: 60px;
+    text-align: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+.top-menu-list>li{
+    cursor: pointer;
+    border-right: 1.5px solid rgb(235,81,22);
+    padding-top: 20px;
+}
+.top-menu-list>li:last-child{
+    border-right: none;
+}
+.top-menu-list>li:hover{
+    background-color:  rgb(235,81,22);
+}
+.selected{
+    background-color:  rgb(235,81,22);
+}
+.breadcrumbs{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(90, 90, 90);
+    margin-left: 70px;
+
+}
+.breadcrumbs>li{
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+}
+.breadcrumbs>li:last-child{
+    text-decoration: none;
+}
+
+.calculator{
+    margin-top: 50px;
+    margin-left: 70px;
+    background-color: rgb(242,242,242);
+    border: thick double white;
+    width: 62%;
+    height: 500px;
+}
+h1{
+    color:  rgb(235,81,22);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+    font-size: 30pt;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.form-calculator{
+    display: grid;
+    grid-template-columns: 30% 20% 40%;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    display: block;
+    padding-bottom: 30px;
+    text-align: right;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inputs{
+    padding-left: 50px;
+}
+select{
+    border: 1px solid gray;
+    width: 114px;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 30px;
+}
+.input-block{
+    display: block;
+    margin-bottom: 30px;
+    height: 20px;
+    width: 100px;
+    font-size: 12pt;
+    background-color: white;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+.input-inline{
+    margin-left: 30px;
+}
+.input-span{
+    display: block;
+    margin-bottom: 28px;
+}
+.submit-button{
+    margin-left: 80px;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-weight:bolder;
+    color: rgb(63, 63, 63);
+    background: linear-gradient(rgb(191,242,57) 0%, rgb(109, 182, 0) 100%);
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt; margin: 0;
+}
+span>span{
+    color: rgb(0, 85, 0);
+    margin-left:40px
+}
+span>input{
+    background-color: rgb(242,242,242);
+    border: none;
+    font-size: 14pt;
+    padding: 0;
+    text-align: right;
+    width: 140px;
+}
+.sliders{
+}
+#slider1{
+    margin-top: 60px;
+}
+#slider2{
+    margin-top: 115px;
+}
+#error1{
+    visibility: visible;
+
+}
+#error2{
+    visibility: hidden;
+
+}
+#error3{
+    visibility: hidden;
+
+}
+.slider2class{
+    visibility: hidden;
+}
+.slider_label{
+    width: 50%;
+    display: inline-block;
+}
+.slider_label>span{
+    font-size: 10pt;
+    font-style: italic;
+}
+.slider_label2{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+.slider_label2>span{
+    font-size: 10pt;
+    text-align: right;
+    font-style: italic;
+}
+
+footer{
+    background-color: rgb(35,34,33);
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 70px;
+}
+.bottom-menu{
+    color: white;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-left: 65px;
+    padding-top: 15px;
+}
+.bottom-menu>li{
+    cursor: pointer;
+    border-bottom:1.5px solid white;
+    display: inline-block;
+    margin-left: 40px;
+}
+
